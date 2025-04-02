@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saved Images - Image Gallery</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Image Gallery</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Gallery</a></li>
+          <li><a href="/saved" class="active">Saved Images</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div id="loading" class="loading">
+      <div class="spinner"></div>
+    </div>
+
+    <div id="saved-gallery" class="image-grid"></div>
+    <div id="no-images" class="no-images hidden">
+      <p>No saved images found. Go back to the gallery to save some images.</p>
+      <a href="/" class="button">Back to Gallery</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Image Gallery App | Powered by Pexels</p>
+    </div>
+  </footer>
+
+  <script src="/js/saved.js"></script>
+</body>
+</html>
+
